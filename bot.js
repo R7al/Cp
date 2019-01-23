@@ -44,7 +44,7 @@ if (!rreason) return message.channel.send(" rreason can't find!")
 
 
 
- i
+ 
 
 
 
