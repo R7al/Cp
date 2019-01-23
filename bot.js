@@ -16,7 +16,7 @@ bot.on('ready',  () => {
 
 
  // const millis = new Date().getTime() - message.user.createdAt.getTime();
-    const now = new Date();
+   
    // const createdAt = millis / 1000 / 60 / 60 / 24;
 
 
@@ -44,15 +44,7 @@ if (!rreason) return message.channel.send(" rreason can't find!")
 
 
 
- if(!warns[wUser.id]) warns[wUser.id] = {
-      warns: 0
-    };
-  
-    warns[wUser.id].warns++;
-  
-    fs.writeFile("./warnings.json", JSON.stringify(warns), (err) => {
-      if (err) console.log(err)
-    });
+ i
 
 
 
@@ -66,7 +58,6 @@ message.channel.send("تم ارسال الشكوى للادارة العليا")
     .addField("✎الشخص المشتكى عليه", `${wUser} with ID: ${wUser.id}`)
     .addField("✐تم الاشتكاء بواسطة", `${message.author} with ID: ${message.author.id}`)
     .addField("™الروم", message.channel)
-        .addField("⚔ رقم الشكوة", warns[wUser.id].warns)
     .addField("⌚️ الوقت", message.createdAt)
     .addField("✉️ السبب", rreason)
 
