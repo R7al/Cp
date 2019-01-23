@@ -7,7 +7,7 @@ const bot = new Discord.Client({disableEveryone: true});
 const fs = require("fs"); //npm i fs
 
   
-
+const prefix ="!"
 bot.on('ready',  () => {
     console.log(`Logged in as ${bot.user.tag}!`);
   });
