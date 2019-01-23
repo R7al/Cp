@@ -1,7 +1,6 @@
 const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
-const fs = require("fs"); //npm i fs
-const ms = require("ms");   //npm i ms 
+
 const bot = new Discord.Client({disableEveryone: true});
 
 let warns = JSON.parse(fs.readFileSync("./warnings.json", "utf8"));
